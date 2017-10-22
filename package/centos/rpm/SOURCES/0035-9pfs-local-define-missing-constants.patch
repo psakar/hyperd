@@ -1,0 +1,15 @@
+--- a/hw/9pfs/virtio-9p-util.h.orig	2017-10-21 21:57:18.500387303 +0000
++++ b/hw/9pfs/virtio-9p-util.h	2017-10-21 21:57:38.733497937 +0000
+@@ -10,6 +10,12 @@
+  * See the COPYING file in the top-level directory.
+  */
+ 
++#ifndef O_PATH
++#define O_PATH		010000000
++#endif /* _O_PATH */
++#ifndef AT_EMPTY_PATH
++#define AT_EMPTY_PATH		0x1000	/* Allow empty relative pathname */
++#endif /* _AT_EMPTY_PATH */
+ #ifndef QEMU_9P_UTIL_H
+ #define QEMU_9P_UTIL_H
+ 

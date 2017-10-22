@@ -51,6 +51,7 @@ Patch31: 0031-9pfs-local-mknod-don-t-follow-symlinks.patch
 Patch32: 0032-9pfs-local-mkdir-don-t-follow-symlinks.patch
 Patch33: 0033-9pfs-local-open2-don-t-follow-symlinks.patch
 Patch34: 0034-9pfs-local-drop-unused-code.patch
+Patch35: 0035-9pfs-local-define-missing-constants.patch
 
 %define _unpackaged_files_terminate_build 0
 %define _missing_doc_files_terminate_build 0
@@ -96,6 +97,7 @@ Hyper build is for x86_64 arch and enable virtfs and rbd support
 %patch32 -p1
 %patch33 -p1
 %patch34 -p1
+%patch35 -p1
 
 %build
 cd %{_builddir}/qemu-2.4.1
