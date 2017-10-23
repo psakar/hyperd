@@ -11,7 +11,8 @@ Source0:            hyperd-%{version}.tar.gz
 URL:                https://hyper.sh/
 ExclusiveArch:      x86_64
 Requires:           device-mapper,sqlite
-BuildRequires:      device-mapper-devel,pcre-devel,libsepol-devel,libselinux-devel,systemd-devel
+BuildRequires:      device-mapper-devel,pcre-devel,libsepol-devel,libselinux-devel
+#BuildRequires:      systemd-devel
 BuildRequires:      sqlite-devel
 #CentOS 7 does not have xen included
 #BuildRequires:      libuuid-devel,xen-devel
